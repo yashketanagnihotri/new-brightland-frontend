@@ -14,7 +14,7 @@ export default function QueryAndAboutSection({ language }) {
 
   const handleSubmit = async () => {
     try {
-      const response = await fetch('API_URL_HERE', {
+      const response = await fetch('https://new-brightland-backend-production.up.railway.app/submit-query', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
